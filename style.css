@@ -416,3 +416,23 @@ footer {
 #iw {
     font-size: 35px;
 }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+    width: 65%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: auto;
+}
+.container {
+    padding: 16px 16px;
+    text-align: lefts;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
