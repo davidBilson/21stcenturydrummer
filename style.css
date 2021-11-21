@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+* a {
+    text-decoration: none;
+}
+* a:visited{
+    text-decoration: whitesmoke;
+}
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: #e90aa6;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+ .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    * {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  section {
+      width: 100%;
+      height: auto;
+      background:url(images/cymbal.jfif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color:rgb(255, 255, 255);
+      text-shadow: 0px 2px 2px silver;
+      padding: 13vh 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  section img {
+      box-shadow:0px 10px 18px rgb(126, 126, 126) ;
+  }
+  section > div {
+      margin: 20px;
+  }
+  section > div button {
+      padding: 10px 40px;
+      background: white;
+      color:rgb(3, 25, 221);
+      font-size: 16px;
+      border: none;
+      font-weight: 500;
+      margin-top:20px;
+      transition: 0.7s;
+  }
+  section > div button:hover{
+        background: none;
+        border:1px solid white;
+        color: #fff;
+  }
+  section > div h1 {
+      font-size: 50px;
+      font-weight: 900;
+  }
+  section > div p {
+      margin-top: 25px;
+      line-height: 1.5em;
+      font-size: 16px;
+      font-weight:500 ;
+      max-width: 400px;
+      min-width:350px;
+      text-align: left;
+  }
+  .second {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #fcfcfcf8;
+  }
+  .second h1 {
+      font-size: 30px;
+      font-weight: 900;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #121213;
+  }
+  .second p {
+    line-height: 1.5em;
+    text-align:left;
+
+    padding: 0px 20px;
+    font-size: 17px;
+    margin: auto;
+  }
+  .second-div {
+      display: flex;
+      flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .second-div > div {
+      margin:50px;
+  }
+  .quad {
+      width: ;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  .quad > div {
+      width: 250px;
+      height: 300px;
+      box-shadow: 0px 7px 15px rgb(129, 129, 255);
+      margin: 20px;
+      padding: 15px 10px;
+
+  } 
+  .quad > div h1{
+      font-size: 40px;  
+      font-weight: 500;
+      text-align: center;
+      margin: auto;
+      width: 70px;
+      padding: 10px;
+      background: rgb(221, 221, 221);
+      border-radius: 30000px;
+  }
+.coming {
+    padding: 0px 20px;
+}
+  .quick {
+      width:fit-content;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: auto;   
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: -300px;
+        position: relative;
+        z-index: 200;
+        padding: 30px 10px;
+        border: 1px solid #e2e2e2;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px;
+        border-radius: 9px;
+        background:white;
+  }
+  .quick ul {
+      font-size: 17px;
+      font-weight: 600;
+  }
+  .quick h1{
+      color: whitesmoke;
+      width: fit-content;
+      padding: 20px;
+      margin: auto;
+      background: mediumblue;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 800;
+  }
+  .quad > div h2 {
+       font-size: 22px; 
+       font-weight: 700;
+       text-align: center;
+    color: rgb(98, 116, 156);
+       line-height: 2em;
+  }
+  .email-campaign {
+      width: 70% auto;
+      background: rgb(3, 26, 231);
+      padding: 500px  8px 70px 8px;
+      color: white;
+    
+  }
+  .email-campaign p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .email-campaign .fieldset {
+      padding: 50px 50px 20px 15px;
+      width: fit-content;
+      margin: auto;
+      margin-top: 40px;
+  }
+  .email-campaign .fieldset legend {
+      padding-left: 20px;
+  }
+  .email-campaign .fieldset label {
+      font-size: 16px;
+      font-weight: 700;
+  }
+  .email-campaign .fieldset span {
+      font-size: 19px;
+      font-weight: 800;
+  }
+  .email-campaign input {
+      width: 275px;
+      height: 30px;
+      border: none;
+      padding: 8px;
+      border-radius: 2px;
+      background: none;
+      color: #fff;
+      border-bottom: 1px solid whitesmoke;
+  }
+#submit {
+    background: #f2f2f2;
+    color: rgb(12, 11, 11);
+    font-weight: 600;
+    width:130px;
+    border: none;
+    transition: 0.8s;
+}
+#submit:hover {
+    background: none;
+    border:1px solid #f2f2f2;
+    color: white;
+}
+.sell #buy {
+    padding: 12px 40px;
+    font-size: 16px;
+    background: navy;
+    border: none;
+    color: white;
+    margin: 20px 0px;
+    margin: auto;
+    border-radius: 60px;
+    font-weight: 700;
+    box-shadow: 0px 7px 15px rgb(126, 117, 146);
+}
+.sell #buyer {
+    font-weight:900;
+    text-align: center;
+    font-size: 29px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer {
+    padding: 70px 30px 10px 30px;
+}
+.foot1 h1 {
+    font-size: 35px;
+}
+.foot1 p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.foot1 label {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(94, 94, 94);
+}
+.foot1 input {
+    width: 275px;
+    height: 33px;
+    border: none;
+    padding: 8px;
+    border-radius: 2px;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid rgb(29, 28, 28);    
+}
+.foot1 #sbm {
+    background: #222130;
+    color: rgb(235, 235, 235);
+    font-weight: 600;
+    width:130px;
+    border: none;
+    transition: 0.8s;
+}
+.foot2 h1{
+    font-size: 27px;
+    text-align: center;
+}
+.foot2 ul {
+    list-style: none;
+    display: flex;
+}
+.foot2 ul li {
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+.encompass-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.encompass-footer > div {
+    margin: 20px;
+}
+#copyright {
+    font-size: 12px;
+    margin-top: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(104, 104, 104);
+}
+.optin-page {
+    width: 65%;
+    margin: auto;
+    height: 200vh;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.polp  {
+    margin-top: 30px;
+}
+.polp h1 {
+    text-align: center;
+    color: navy; 
+    font-size: 30px;
+    font-weight: 800;
+}
+.polp h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.polp p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#iw {
+    font-size: 35px;
+}
